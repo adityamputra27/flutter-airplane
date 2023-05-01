@@ -4,8 +4,6 @@ import 'package:airplane/ui/widgets/custom_button.dart';
 import 'package:airplane/ui/widgets/interest_item.dart';
 import 'package:airplane/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({super.key});

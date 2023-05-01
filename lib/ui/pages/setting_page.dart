@@ -8,7 +8,7 @@ class SettingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBackgroundColor,
-      body: Center(
+      body: const Center(
         child: Text('Setting page'),
       ),
     );
