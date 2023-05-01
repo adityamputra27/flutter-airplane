@@ -5,10 +5,12 @@ import '../../shared/theme.dart';
 
 class CustomBottomNavigationItem extends StatelessWidget {
   final String imageUrl;
+  final int currentIndex;
   final int index;
 
   const CustomBottomNavigationItem({
     Key? key,
+    required this.currentIndex,
     required this.imageUrl,
     required this.index,
   }) : super(key: key);
@@ -27,17 +29,13 @@ class CustomBottomNavigationItem extends StatelessWidget {
             imageUrl,
             width: 24,
             height: 24,
-            color: context.read<PageCubit>().state == index
-                ? kPrimaryColor
-                : kGreyColor,
+            color: currentIndex == index ? kPrimaryColor : kGreyColor,
           ),
           Container(
             width: 30,
             height: 2,
             decoration: BoxDecoration(
-              color: context.read<PageCubit>().state == index
-                  ? kPrimaryColor
-                  : kTransparentColor,
+              color: currentIndex == index ? kPrimaryColor : kTransparentColor,
               borderRadius: BorderRadius.circular(defaultRadius),
             ),
           ),

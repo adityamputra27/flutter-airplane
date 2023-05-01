@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
       }
     }
 
-    Widget customButtonNavigation() {
+    Widget customButtonNavigation(int currentIndex) {
       return Align(
         alignment: Alignment.bottomCenter,
         child: Container(
@@ -45,21 +45,25 @@ class MainPage extends StatelessWidget {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
+            children: [
               CustomBottomNavigationItem(
                 imageUrl: 'assets/icon_home.png',
+                currentIndex: currentIndex,
                 index: 0,
               ),
               CustomBottomNavigationItem(
                 imageUrl: 'assets/icon_booking.png',
+                currentIndex: currentIndex,
                 index: 1,
               ),
               CustomBottomNavigationItem(
                 imageUrl: 'assets/icon_card.png',
+                currentIndex: currentIndex,
                 index: 2,
               ),
               CustomBottomNavigationItem(
                 imageUrl: 'assets/icon_settings.png',
+                currentIndex: currentIndex,
                 index: 3,
               ),
             ],
@@ -75,7 +79,7 @@ class MainPage extends StatelessWidget {
           body: Stack(
             children: [
               buildContent(currentIndex),
-              customButtonNavigation(),
+              customButtonNavigation(currentIndex),
             ],
           ),
         );
