@@ -8,12 +8,12 @@ class CustomButton extends StatelessWidget {
   final EdgeInsets margin;
 
   const CustomButton({
-    super.key,
+    Key? key,
     required this.title,
     this.width = double.infinity,
     required this.onPressed,
     this.margin = EdgeInsets.zero,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

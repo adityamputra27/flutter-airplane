@@ -9,12 +9,12 @@ class DestinationCard extends StatelessWidget {
   final double rating;
 
   const DestinationCard({
-    super.key,
+    Key? key,
     required this.name,
     required this.city,
     required this.imageUrl,
     this.rating = 0.0,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -6,7 +6,7 @@ import 'package:airplane/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({super.key});
+  const DetailPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

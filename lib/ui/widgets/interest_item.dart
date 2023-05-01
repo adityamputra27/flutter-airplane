@@ -5,9 +5,9 @@ class InterestItem extends StatelessWidget {
   final String text;
 
   const InterestItem({
-    super.key,
+    Key? key,
     required this.text,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

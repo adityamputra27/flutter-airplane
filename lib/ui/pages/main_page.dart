@@ -9,7 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../shared/theme.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+  const MainPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -70,15 +70,13 @@ class MainPage extends StatelessWidget {
 
     return BlocBuilder<PageCubit, int>(
       builder: (context, currentIndex) {
-        return SafeArea(
-          child: Scaffold(
-            backgroundColor: kBackgroundColor,
-            body: Stack(
-              children: [
-                buildContent(currentIndex),
-                customButtonNavigation(),
-              ],
-            ),
+        return Scaffold(
+          backgroundColor: kBackgroundColor,
+          body: Stack(
+            children: [
+              buildContent(currentIndex),
+              customButtonNavigation(),
+            ],
           ),
         );
       },

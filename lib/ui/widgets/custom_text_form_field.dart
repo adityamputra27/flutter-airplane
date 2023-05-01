@@ -8,12 +8,12 @@ class CustomTextFormField extends StatelessWidget {
   final EdgeInsets margin;
 
   const CustomTextFormField({
-    super.key,
+    Key? key,
     required this.title,
     required this.hintText,
     this.obscureText = false,
     this.margin = EdgeInsets.zero,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

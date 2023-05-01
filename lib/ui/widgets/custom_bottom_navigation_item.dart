@@ -8,10 +8,10 @@ class CustomBottomNavigationItem extends StatelessWidget {
   final int index;
 
   const CustomBottomNavigationItem({
-    super.key,
+    Key? key,
     required this.imageUrl,
     required this.index,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

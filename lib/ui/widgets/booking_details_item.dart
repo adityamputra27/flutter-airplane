@@ -7,11 +7,11 @@ class BookingDetailsItem extends StatelessWidget {
   final Color valueColor;
 
   const BookingDetailsItem({
-    super.key,
+    Key? key,
     required this.title,
     required this.valueText,
     required this.valueColor,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

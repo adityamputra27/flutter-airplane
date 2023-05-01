@@ -7,9 +7,9 @@ class SeatItem extends StatelessWidget {
   final int status;
 
   const SeatItem({
-    super.key,
+    Key? key,
     required this.status,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

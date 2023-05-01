@@ -3,7 +3,7 @@ import 'package:airplane/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class SuccessCheckoutPage extends StatelessWidget {
-  const SuccessCheckoutPage({super.key});
+  const SuccessCheckoutPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

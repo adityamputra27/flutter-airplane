@@ -4,7 +4,10 @@ import 'package:airplane/shared/theme.dart';
 class PhotoItem extends StatelessWidget {
   final String imageUrl;
 
-  const PhotoItem({super.key, required this.imageUrl});
+  const PhotoItem({
+    Key? key,
+    required this.imageUrl,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
