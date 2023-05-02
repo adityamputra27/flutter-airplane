@@ -1,3 +1,4 @@
+import 'package:airplane/models/user_model.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
