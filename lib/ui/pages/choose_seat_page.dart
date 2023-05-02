@@ -12,7 +12,7 @@ class ChooseSeatPage extends StatelessWidget {
     Widget title() {
       return Container(
         margin: const EdgeInsets.only(
-          top: 50,
+          top: 55,
         ),
         child: Text(
           'Select Your\nFavorite Seat',
